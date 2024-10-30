@@ -1,0 +1,62 @@
+#bslider{
+    font-family: 'PT Sans Narrow', sans-serif;
+	width: 100%;
+	height: 440px;
+	position: relative;
+	overflow: hidden;
+}
+#bslider .slide{
+	width: 100%;
+    position: absolute;
+    overflow: hidden;
+	display: none;
+}
+#bslider .slide img{
+	width: 100%;
+}
+#bslider .slide a{
+}
+#bslider .slide .caption{
+	position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    left: 0;
+    width: 100%;
+    color: #fff;
+}
+#bslider .slide .title{
+	position: absolute;
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    padding: 5px;
+    left: 0;
+    width: 100%;
+    color: #fff;
+	font-size: 30px;
+}
+#bslider .slide .rtl{
+	text-align: right;
+    right: 0px;
+    left: inherit !important;
+}
+#bslider .slide.active{
+	display: block;	
+	transform: rotateY(0deg);
+	transition: 0.6s;
+	transform-style: preserve-3d;
+}
+
+#bslider .steps{
+	position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+#bslider .steps .step{
+	background: #e1e1e1;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-left: 3px;
+}
+#bslider .steps .step.active{
+	background: #4FDB5F;
+}
